@@ -1,4 +1,100 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/custom_invoices.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/addNewCustomer.feature");
+formatter.feature({
+  "name": "Adding new Customer on the Invoicing module.",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@newCustomer"
+    },
+    {
+      "name": "@smoke"
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Testing Create New Customer/Sales on Invoicing module",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@newCustomer"
+    },
+    {
+      "name": "@smoke"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on Master Data button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AddNewCustomer_steps.user_clicks_on_Master_Data_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on Customers button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddNewCustomer_steps.user_clicks_on_Customers_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on Create button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddNewCustomer_steps.user_clicks_on_Create_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User inputs a random name in the name field",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddNewCustomer_steps.user_inputs_a_random_name_in_the_name_field()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on Save button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddNewCustomer_steps.user_clicks_on_Save_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should see the new customer created under used name.",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddNewCustomer_steps.user_should_see_the_new_customer_created_under_used_name()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("src/test/resources/features/custom_invoices.feature");
 formatter.feature({
   "name": "As a user I should have Customer Invoices page to see and manage all Invoices",
   "description": "",
