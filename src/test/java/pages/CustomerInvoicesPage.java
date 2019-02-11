@@ -45,10 +45,14 @@ public class CustomerInvoicesPage {
     @FindBy(xpath = "//td[@class='o_data_cell o_required_modifier']")
     public WebElement customerNameInTable;
 
-    @FindBy(xpath = "//input[@id='o_field_input_802']")
+    @FindBy(xpath = "//div[@name='partner_id']/div/input")
     public WebElement customerField;
 
-    @FindBy(xpath = "//h4[@class='modal-title']")
+    @FindBy(xpath = "(//table[@class='o_list_view table table-condensed table-striped o_list_view_ungrouped']/tbody/tr/td[@class='o_data_cell o_required_modifier'])[1]")
     public WebElement createACustomer;
+
+    @FindBy(xpath = "//span[.='Create']")
+    public WebElement createAgain;
+
 
 }

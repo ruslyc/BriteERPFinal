@@ -1,6 +1,7 @@
 package pages;
 
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,7 +20,8 @@ public class HomePage {
     @FindBy(xpath = "//a[@href='/web/login']/b")
     public WebElement signinButton;
 
-    @FindBy(xpath = "//a[@href='/web/database/selector']")
+
+    @FindBy(xpath = "//a[@class='btn btn-default']")
     public WebElement selectButton;
 
     @FindBy(xpath = "//a[@href='/web?db=BriteErpDemo']")
@@ -37,11 +39,36 @@ public class HomePage {
     @FindBy(xpath = "//div[@class='navbar-collapse collapse']//a[@data-menu-xmlid='account.menu_finance']/span")
     public WebElement invoicingModule;
 
+    @FindBy(xpath = "//span[@class='oe_topbar_name']")
+    public WebElement menuButton;
+
+    @FindBy(xpath = "//a[@data-menu='logout']")
+    public WebElement logoutButton;
+
+    @FindBy(xpath = "//span[.='Lunch_Invoicing_User4']")
+    public WebElement menuDropDown;
+
+    @FindBy(xpath = "//a[.='Logout']")
+    public WebElement logOut;
+
+    @FindBy(xpath = "//a[@class='dropdown full']")
+    public WebElement websiteDropdown;
+
+    @FindBy(xpath = "//a[contains(span,'Invoicing')]")
+    public WebElement invoicingOption;
+
     public void login(String username, String password){
         BriteErpDemoOption.click();
         this.username.sendKeys(username);
         this.password.sendKeys(password);
         loginButton.click();
+    }
+
+    public void logout(){
+//        menuButton.click();
+//        loginButton.click();
+        menuDropDown.click();
+        logOut.click();
     }
 
 

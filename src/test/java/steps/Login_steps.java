@@ -9,7 +9,7 @@ import pages.HomePage;
 import utilities.Config;
 import utilities.Driver;
 
-public class Background_steps {
+public class Login_steps {
 
     HomePage hp = new HomePage();
 

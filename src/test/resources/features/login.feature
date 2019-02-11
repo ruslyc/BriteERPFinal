@@ -1,5 +1,5 @@
-@login @smoke
-  Feature: Invoicing background functionality
+@login
+  Feature: Login feature
 
     Scenario: login with valid credentials
       Given the user is on the login page and user enters valid credentials
