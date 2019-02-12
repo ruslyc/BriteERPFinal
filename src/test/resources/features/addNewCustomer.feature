@@ -1,5 +1,5 @@
-@smoke
-Feature: Adding new Customer on the Invoicing module.
+@newCustomer @smoke
+Feature: Adding new Customer in the Sales.Invoicing module
 
   Scenario: Testing Create New Customer/Sales on Invoicing module
     When User clicks on Master Data button
