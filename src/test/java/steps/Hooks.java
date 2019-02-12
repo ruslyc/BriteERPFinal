@@ -37,21 +37,14 @@ public class Hooks {
     }
 
 
-
-    @Before
-    public void setUp(Scenario scenario){
-        System.out.println("This is running BEFORE each scenario");
-
-
-    }
-
     @After
-    public void tearDown(Scenario scenario){
+    public void tearDown(Scenario scenario) throws InterruptedException {
         if (scenario.isFailed()){
             final byte [] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot,"image/png");
         }
         HomePage hp = new HomePage();
+        Thread.sleep(2000);
         hp.menuButton.click();
         hp.logoutButton.click();
 //        Driver.getDriver().manage().deleteAllCookies();
