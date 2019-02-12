@@ -9,6 +9,7 @@ public class UpdateCustomerContact_steps {
 
     SalesCustomersPage scp = new SalesCustomersPage();
 
+
     @When("User clicks on random customer")
     public void user_clicks_on_random_customer() {
         scp.randomCustomer.click();

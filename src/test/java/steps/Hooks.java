@@ -37,14 +37,6 @@ public class Hooks {
     }
 
 
-
-    @Before
-    public void setUp(Scenario scenario){
-        System.out.println("This is running BEFORE each scenario");
-
-
-    }
-
     @After
     public void tearDown(Scenario scenario){
         if (scenario.isFailed()){
