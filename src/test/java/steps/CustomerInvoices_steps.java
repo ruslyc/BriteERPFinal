@@ -37,6 +37,7 @@ public class CustomerInvoices_steps {
 
     @When("User clicks Create button on top left of the page")
     public void user_clicks_Create_button_on_top_left_of_the_page() throws InterruptedException {
+        Thread.sleep(2000);
         ci.createButton.click();
     }
 

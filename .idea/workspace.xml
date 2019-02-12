@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9abef8c-2fd1-4b5e-847f-96310c00f9c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CustomerInvoicesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CustomerInvoicesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/addNewCustomer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/addNewCustomer.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber/embedded0.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/embedded0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/embedded1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/CustomerInvoices_steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/CustomerInvoices_steps.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,7 +27,7 @@
         <counts>
           <entry key="dummy" value="5" />
           <entry key="feature" value="1710" />
-          <entry key="java" value="1590" />
+          <entry key="java" value="1602" />
           <entry key="properties" value="12" />
           <entry key="xml" value="8" />
         </counts>
@@ -43,7 +35,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Cucumber" value="1710" />
-          <entry key="JAVA" value="1590" />
+          <entry key="JAVA" value="1602" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="Properties" value="12" />
           <entry key="XML" value="8" />
@@ -88,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/CustomerInvoices_steps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="131" column="35" selection-start-line="131" selection-start-column="35" selection-end-line="131" selection-end-column="35" />
+            <state relative-caret-position="682">
+              <caret line="64" column="126" selection-start-line="64" selection-start-column="126" selection-end-line="64" selection-end-column="126" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/SalesCustomersPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="56" />
+            <state relative-caret-position="-24">
+              <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -182,7 +174,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="501">
               <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -221,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/test/java/utilities/Config.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/custom_invoices.feature" />
         <option value="$PROJECT_DIR$/src/test/java/steps/AddNewCustomer_steps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/CustomerInvoices_steps.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/updateCustomerContact.feature" />
         <option value="$PROJECT_DIR$/src/test/java/pages/SalesCustomersPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/UpdateCustomerContact_steps.java" />
@@ -229,6 +220,7 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/addNewCustomer.feature" />
         <option value="$PROJECT_DIR$/src/test/java/steps/Hooks.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/CustomerInvoices_steps.java" />
       </list>
     </option>
   </component>
@@ -343,7 +335,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549934989884" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549935585656" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -399,15 +391,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Runner - 2019.02.11 at 18h 46m 09s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Runner - 2019.02.11 at 18h 48m 39s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Runner - 2019.02.11 at 18h 48m 47s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Runner - 2019.02.11 at 18h 49m 45s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
@@ -429,6 +412,15 @@
     <history-entry file="Runner - 2019.02.11 at 19h 24m 33s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Runner - 2019.02.11 at 19h 29m 23s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Runner - 2019.02.11 at 19h 31m 55s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Runner - 2019.02.11 at 19h 38m 45s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="22" y="24" width="1400" height="751" extended-state="0" />
@@ -444,13 +436,13 @@
       <window_info id="Favorites" order="7" sideWeight="0.5011287" side_tool="true" weight="0.2790869" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992636" visible="true" weight="0.3171472" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.77835053" visible="true" weight="0.3171472" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32776934" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50073636" side_tool="true" visible="true" weight="0.3171472" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4992636" weight="0.32776934" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.22164948" side_tool="true" visible="true" weight="0.3171472" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32776934" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -561,16 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/CustomerInvoices_steps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="131" column="35" selection-start-line="131" selection-start-column="35" selection-end-line="131" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/updateCustomerContact.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -645,9 +627,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SalesCustomersPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/Hooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="501">
           <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -655,10 +644,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/SalesCustomersPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/CustomerInvoices_steps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="56" />
+        <state relative-caret-position="682">
+          <caret line="64" column="126" selection-start-line="64" selection-start-column="126" selection-end-line="64" selection-end-column="126" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
