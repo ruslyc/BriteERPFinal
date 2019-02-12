@@ -1,5 +1,6 @@
 package steps;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -90,5 +91,44 @@ public class CustomerInvoices_steps {
         String alert = Driver.getDriver().findElement(By.xpath("//div[@class='o_notification_manager']")).getText();
         Thread.sleep(2000);
         Assert.assertTrue(alert.contains("The following fields are invalid:"));
+    }
+
+    @And("^User clicks \"([^\"]*)\" from the table$")
+    public void userClicksFromTheTable(String name) throws Throwable {
+        ci.createACustomer.click();
+    }
+
+    @Then("^User should be able to see 'Invoice page'$")
+    public void userShouldBeAbleToSeeInvoicePage() throws Throwable {
+        Thread.sleep(3000);
+        Assert.assertEquals(ci.customerInvoicePage.getText(),"Customer Invoices");
+    }
+
+    @And("^User clicks 'Action' on top of the page$")
+    public void userClicksActionOnTopOfThePage() throws Throwable {
+        Thread.sleep(2000);
+        ci.actionButton.click();
+    }
+
+    @And("^User clicks 'Delete' button$")
+    public void userClicksDeleteButton() throws Throwable {
+        ci.deleteButton.click();
+    }
+
+    @Then("^User should able to see Confirmation message with (\\d+) option:'Ok' and 'Cancel'$")
+    public void userShouldAbleToSeeConfirmationMessageWithOptionOkAndCancel(int arg0) throws Throwable {
+        Assert.assertEquals(ci.confirmationPage.getText(),"Confirmation");
+    }
+
+    @And("^User clicks 'Cancel' button$")
+    public void userClicksCancelButton() throws Throwable {
+        Thread.sleep(1000);
+        ci.cancelButton.click();
+        Thread.sleep(500);
+    }
+
+    @And("^User clicks Invoicing link$")
+    public void userClicksInvoicingLink() throws Throwable {
+        hp.invoicingModule.click();
     }
 }

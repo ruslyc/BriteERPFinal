@@ -28,3 +28,18 @@ Feature: As a user I should have Customer Invoices page to see and manage all In
       And User clicks Discard button
       Then User Verifies that empty row does not displays in the table on Customer invoices page
 
+      @BRIT-289
+      Scenario Outline: Testing 'Cancel' option under Action / Delete
+        When User clicks Invoicing link on top left of the page
+        And User clicks "name" from the table
+        Then User should be able to see 'Invoice page'
+        And User clicks 'Action' on top of the page
+        And User clicks 'Delete' button
+        Then User should able to see Confirmation message with 2 option:'Ok' and 'Cancel'
+        And User clicks 'Cancel' button
+        And User clicks Invoicing link
+        Then User verifying that "<name>" displays in the table on Customer Invoices page
+        Examples:
+          | name |
+          | John |
+

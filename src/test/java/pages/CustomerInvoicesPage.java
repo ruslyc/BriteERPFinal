@@ -54,5 +54,20 @@ public class CustomerInvoicesPage {
     @FindBy(xpath = "//span[.='Create']")
     public WebElement createAgain;
 
+    @FindBy(xpath = "//li[.='Customer Invoices']")
+    public WebElement customerInvoicePage;
+
+    @FindBy(xpath = "//div[@class='o_cp_sidebar']//div[contains(button,'Action')]")
+    public WebElement actionButton;
+
+    @FindBy(xpath = "(//ul[@class='dropdown-menu'])[5]/li[1]")
+    public WebElement deleteButton;
+
+    @FindBy(xpath = "//h4[@class='modal-title']")
+    public WebElement confirmationPage;
+
+    @FindBy(xpath = "//button[@class='btn btn-sm btn-default']")
+    public WebElement cancelButton;
+
 
 }
