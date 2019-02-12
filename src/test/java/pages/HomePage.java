@@ -39,7 +39,7 @@ public class HomePage {
     @FindBy(xpath = "//div[@class='navbar-collapse collapse']//a[@data-menu-xmlid='account.menu_finance']/span")
     public WebElement invoicingModule;
 
-    @FindBy(xpath = "//span[@class='oe_topbar_name']")
+    @FindBy(xpath = "//a[@class='dropdown-toggle']//span")
     public WebElement menuButton;
 
     @FindBy(xpath = "//a[@data-menu='logout']")
