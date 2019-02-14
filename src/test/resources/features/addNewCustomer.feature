@@ -8,4 +8,3 @@ Feature: Adding new Customer in the Sales.Invoicing module
     And User inputs a random name in the name field
     And User clicks on Save button
     Then User should see the new customer created under used name.
-t
