@@ -1,4 +1,4 @@
-@login
+
   Feature: Login feature
 
     Scenario: login with valid credentials

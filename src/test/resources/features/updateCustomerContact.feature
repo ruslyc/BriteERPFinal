@@ -1,4 +1,4 @@
-@smoke
+
 Feature: Update Customer Contact info
 
   Scenario: Update Customer Contact info

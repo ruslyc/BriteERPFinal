@@ -1,4 +1,4 @@
-@smoke @BRIT-284
+ @BRIT-284
 Feature: As a user I should have Customer Invoices page to see and manage all Invoices
 
 #  Background:
